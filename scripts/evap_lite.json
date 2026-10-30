@@ -1,0 +1,18 @@
+{
+    "dataset": "reanalysis-era5-single-levels",
+    "request": {
+        "product_type": ["reanalysis"],
+        "variable": ["evaporation"],
+        "year": ["2021"],
+        "month": ["08"],
+        "day": [
+            "01"
+        ],
+        "time": [
+            "00:00"
+        ],
+        "data_format": "grib",
+        "download_format": "unarchived",
+        "area": [40, -100, 0, -60]
+    }
+}
