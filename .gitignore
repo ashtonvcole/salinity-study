@@ -18,13 +18,17 @@ __pycache__
 *.61
 *.62
 *.63
+*.631
 *.64
+*.641
 *.71
 *.72
 *.73
 *.74
 *.80
 metis_graph.txt
+run.timing
+post.timing
 PE*
 adcpost
 adcprep
