@@ -29,6 +29,8 @@ __pycache__
 metis_graph.txt
 run.timing
 post.timing
+Temp/
+gmt.conf
 PE*
 adcpost
 adcprep
