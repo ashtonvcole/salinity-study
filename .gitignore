@@ -37,3 +37,6 @@ adcpost
 adcprep
 dgswem
 
+# Symbolic links
+plots/mesh/TopoBlueGreen.pal
+plots/mesh/TopoBlueGreen.txt
