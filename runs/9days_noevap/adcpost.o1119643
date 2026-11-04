@@ -1,0 +1,45 @@
+ initializing post-processor
+  ***********************************
+  ADCPOST version 1.1  (5/04/99)
+  Parallel ADCIRC Post-processor
+  ***********************************
+  
+  Select operation 
+  
+  post      = Globalize output files
+  compare   = Compare outputs in two directories
+  diffmerge = Merge Difference of outputs in two directori                                                            es
+  quit      = Exit program
+ Post-Processing Unit 55
+ No Local unit 55 files found
+ Post-Processing Unit 63
+ locname PE0000/maxele.63
+ locname PE0001/maxele.63
+ locname PE0002/maxele.63
+ locname PE0003/maxele.63
+ locname PE0004/maxele.63
+ locname PE0005/maxele.63
+ locname PE0006/maxele.63
+ locname PE0007/maxele.63
+            1       251081       251087
+            2       250377       251087
+            3       248812       251087
+            4       250107       251087
+            5       228391       251087
+            6       245407       251087
+            7       237202       251087
+            8       244280       251087
+ Post-Processing Unit 64
+ Post-Processing Unit 74
+ Post-Processing Unit 99
+ No Local fort.99 files found
+ locname PE0000/maxele.99
+ No Local maxele.99 files found
+ Do you want to Post-Process hotstart files? ( Y/N )
+  
+  Select operation 
+  
+  post      = Globalize output files
+  compare   = Compare outputs in two directories
+  diffmerge = Merge Difference of outputs in two directori                                                            es
+  quit      = Exit program
