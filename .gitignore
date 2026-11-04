@@ -26,6 +26,7 @@ __pycache__
 *.73
 *.74
 *.80
+*.99
 metis_graph.txt
 run.timing
 post.timing
