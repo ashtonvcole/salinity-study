@@ -38,5 +38,7 @@ adcprep
 dgswem
 
 # Symbolic links
+plots/mesh/Default2.pal
+plots/mesh/Default2_reversed.pal
 plots/mesh/TopoBlueGreen.pal
 plots/mesh/TopoBlueGreen.txt
