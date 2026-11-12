@@ -37,6 +37,7 @@ adcpost
 adcprep
 dgswem
 *.bp
+*_interp
 *.npy
 *.mp4
 
