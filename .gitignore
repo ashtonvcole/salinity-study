@@ -36,6 +36,9 @@ PE*
 adcpost
 adcprep
 dgswem
+*.bp
+*.npy
+*.mp4
 
 # Symbolic links
 plots/mesh/Default2.pal
