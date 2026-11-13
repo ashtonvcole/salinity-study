@@ -1,0 +1,48 @@
+# Test run on texas_lite disc
+# Constant salinity start
+# c = 1 all around
+
+[inputs]
+mesh = "../../meshes/120m_cut/texas_lite.bp"
+bathymetry-name = "dp"
+interp-dir = "../../meshes/120m_cut/texas_lite_interp"
+fort63 = "fort.63"
+fort64 = "fort.64"
+
+[projection]
+radius-earth = 6378206.4
+cpp-lon = -94.5
+cpp-lat = 29.0
+
+[initial-condition]
+variable = "c"
+type = "constant"
+value = 1.0
+
+[physics]
+velocity-scale = 1.0
+diffusivity = 0.0
+
+[time-stepping]
+t-final = 777000.0 # instead of 777600.0, due to NOUTGV=3000
+dt = 5.0
+ssp-type = "rks3"
+
+[output]
+fields = ["c", "iota"]
+h-min = 1e-3
+path = "tracer_test_1.bp"
+write-every = 720
+
+[[boundary-conditions]]
+# marker = 1
+name = "north"
+type = "dirichlet-c"
+value = 1.0
+
+[[boundary-conditions]]
+# marker = 2
+name = "south"
+type = "dirichlet-c"
+value = 1.0
+
