@@ -1,4 +1,5 @@
 module purge
+eval "$($WORK/miniconda3/bin/conda shell.bash hook)"
 conda activate tracer-post-env
 
 # Claude suggestions
