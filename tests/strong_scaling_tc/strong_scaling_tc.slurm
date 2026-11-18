@@ -12,12 +12,12 @@
 source ../../scripts/tacc_env.sh
 which python
 date>strong_scaling_tc.timing
-echo "nproc,wall_s,status" > scaling.csv
+echo "nproc,wall_s,status" > strong_scaling_tc.csv
 for NPROC in 1 2 4 8 16 32 64 128; do
     t0=$(date +%s.%n)
     mpiexec -bind-to-core -n $NPROC python -u /work/09041/ashtonc/dev/github.com/ashtonvcole/TracerPost/main/src/tracer_post.py strong_scaling_tc.toml
     stat=$?
     t1=$(date +%s.%n)
-    echo "$NPROC,$(echo "$t1 - $t0" | bc -l),$stat" >> scaling.csv
+    echo "$NPROC,$(echo "$t1 - $t0" | bc -l),$stat" >> strong_scaling_tc.csv
 done
 date>>strong_scaling_tc.timing
