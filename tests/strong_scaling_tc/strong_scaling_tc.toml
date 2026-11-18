@@ -1,0 +1,49 @@
+# Strong scaling test run
+# No output
+
+[inputs]
+mesh = "../../meshes/120m_cut/texas_coast.bp"
+bathymetry-name = "dp"
+interp-dir = "../../meshes/120m_cut/texas_coast_interp"
+fort63 = "../../runs/9days_evap/fort.63"
+fort64 = "../../runs/9days_evap/fort.64"
+boundary-meshtag-name = "boundary"
+boundary-meshtag-map = "boundary_tags"
+
+[projection]
+radius-earth = 6378206.4
+cpp-lon = -94.5
+cpp-lat = 29.0
+
+[initial-condition]
+variable = "c"
+type = "constant"
+value = 1.0
+
+[physics]
+velocity-scale = 1.0
+diffusivity = 0.0
+
+[time-stepping]
+t-final = 3600.0
+dt = 10.0
+ssp-type = "rks3"
+
+[output]
+fields = ["c", "iota"]
+h-min = 1e-3
+path = "null.bp"
+write-every = 36000
+
+[[boundary-conditions]]
+# marker = 1
+name = "salt"
+type = "dirichlet-c"
+value = 1.0
+
+[[boundary-conditions]]
+# marker = 2
+name = "fresh"
+type = "dirichlet-c"
+value = 0.0
+
