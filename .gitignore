@@ -40,9 +40,12 @@ dgswem
 *_interp
 *.npy
 *.mp4
+*.tar.gz
 
 # Symbolic links
 plots/mesh/Default2.pal
 plots/mesh/Default2_reversed.pal
 plots/mesh/TopoBlueGreen.pal
 plots/mesh/TopoBlueGreen.txt
+plots/9days_evap/RdBu.pal
+plots/9days_evap_noevap_diff/RdBu.pal
