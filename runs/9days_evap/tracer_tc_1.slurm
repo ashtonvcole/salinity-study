@@ -12,5 +12,5 @@
 source ../../scripts/tacc_env.sh
 which python
 date>tracer_tc_1.timing
-time mpiexec -n 64 python -u /work/09041/ashtonc/dev/github.com/ashtonvcole/TracerPost/main/src/tracer_post.py tracer_tc_1.toml
+time mpiexec -bind-to-core -n 64 python -u /work/09041/ashtonc/dev/github.com/ashtonvcole/TracerPost/main/src/tracer_post.py tracer_tc_1.toml
 date>>tracer_tc_1.timing
