@@ -9,8 +9,7 @@
 #SBATCH -t 1:00:00
 #SBATCH --mail-user=ashtonvcole@utexas.edu
 #SBATCH --mail-type=all
-eval "$($WORK/miniconda3/bin/conda shell.bash hook)"
-conda activate tracer-post-env
+source ../../scripts/tacc_env.sh
 which python
 date>tracer_tc_1.timing
 time mpiexec -n 64 python -u /work/09041/ashtonc/dev/github.com/ashtonvcole/TracerPost/main/src/tracer_post.py tracer_tc_1.toml
