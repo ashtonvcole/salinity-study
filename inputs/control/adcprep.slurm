@@ -10,5 +10,5 @@
 #SBATCH --mail-user=ashtonvcole@utexas.edu
 #SBATCH --mail-type=all
 date>adcprep.timing
-./adcpost < prep.txt
+./adcprep < prep.txt
 date>>adcprep.timing
